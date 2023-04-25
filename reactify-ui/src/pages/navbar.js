@@ -28,7 +28,7 @@ function Navbar(props) {
       setNotify(responseData.notifications);
       setTimeout(fetchData, 5000); // Send a new request every 5 seconds
     };
-    // fetchData();
+    fetchData();
   },[])
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);

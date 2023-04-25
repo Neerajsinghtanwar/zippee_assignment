@@ -23,7 +23,7 @@ export default function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    data.append('is_admin', isAdmin)
+    data.append('is_admin', isAdmin===true?1:0)
 
 
     let endpoint = `/signup`

@@ -51,7 +51,7 @@ def signup():
             name=data['name'],
             email=data['email'],
             password=data['password'],
-            admin=bool(data['is_admin'])
+            admin=bool(int(data['is_admin']))
         )
         db.session.add(user)
         db.session.commit()
